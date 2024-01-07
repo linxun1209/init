@@ -7,6 +7,7 @@ export default [
       { path: '/user/register', component: './User/Register' }
     ]
   },
+  { path: '/user/userinfo', component: './UserInfo',icon: 'icon-yonghu' ,hideInMenu: true,},
   {
     path: '/admin',
     icon: 'crown',

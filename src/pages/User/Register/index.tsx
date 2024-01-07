@@ -133,6 +133,20 @@ const UserRegisterPage: React.FC = () => {
                   },
                 ]}
               />
+              <ProFormText
+                name="userCode"
+                fieldProps={{
+                  size: 'large',
+                  prefix: <UserOutlined />,
+                }}
+                placeholder={'请输入编号'}
+                rules={[
+                  {
+                    required: true,
+                    message: '编号唯一！',
+                  },
+                ]}
+              />
             </>
           )}
 

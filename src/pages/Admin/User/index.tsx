@@ -61,6 +61,28 @@ const UserAdminPage: React.FC = () => {
       valueType: 'text',
     },
     {
+      title: '性别',
+      dataIndex: 'gender',
+      valueEnum: {
+        男: {
+          text: '男',
+        },
+        女: {
+          text: '女',
+        },
+      },
+    },
+    {
+      title: '手机号',
+      dataIndex: 'phone',
+      valueType: 'text',
+    },
+    {
+      title: '邮箱号',
+      dataIndex: 'email',
+      valueType: 'text',
+    },
+    {
       title: '用户名',
       dataIndex: 'userName',
       valueType: 'text',

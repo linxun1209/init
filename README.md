@@ -1,5 +1,5 @@
 
-> 起因：个人开发过程经常会使用到Vue3+SpringBoot技术栈来开发项目，每次在项目初始化时都需要涉及一些重复的整理工作，于是结合一些个人觉得不错的前后端模板进行整合，打通一些大多数项目都需要的实现的基础功能，以便于快速开发项目。代码已按个人力所能及的规范编写，如有不足多多见谅~
+> 起因：个人开发过程经常会使用到React+SpringBoot技术栈来开发项目，每次在项目初始化时都需要涉及一些重复的整理工作，于是结合一些个人觉得不错的前后端模板进行整合，打通一些大多数项目都需要的实现的基础功能，以便于快速开发项目。代码已按个人力所能及的规范编写，如有不足多多见谅~
 
 # 一.功能预览
 
@@ -64,20 +64,3 @@ pnpm install
 # 2. 启动项目
 pnpm dev
 ```
-
-- 后端
-  - 根据`/sql`目录下的`/create_table.sql`创建表
-  - 修改`application.yml`文件中的 `MySQL数据库连接`、`Redis数据库连接`
-  - 修改`/utils/CodeUtils.java`中的邮箱配置
-  - 阿里云oss配置
-
-# 三.代码说明
-
-- 代码地址：[https://gitee.com/fspStudy/quick-develop-template.git   ](https://gitee.com/fspStudy/quick-develop-template.git) （前后端项目放在了同一个父目录中，可以根据需要分别管理）
-
-- 前端模板基于[Pure Admin ](https://yiming_chang.gitee.io/pure-admin-doc/pages/introduction/#预览)进行二次开发，可以参考一下原始模板。
-- 后端模板基于[b站程序员鱼皮编程导航](https://yupi.icu/)中的通用版本模板进行二次开发，星球质量非常赞，学编程的朋友可以去了解一下。
-
-![输入图片说明](https://foruda.gitee.com/images/1691389022661012600/53bbf980_11413979.png "9.png")
-
-
