@@ -1,9 +1,10 @@
-import { DEFAULT_AVATAR_URL, selectAvatarUrl, selectGender } from '@/constants';
+import { DEFAULT_AVATAR_URL, selectGender } from '@/constants';
 import { getLoginUserUsingGet, updateMyUserUsingPost } from '@/services/backend/userController';
-import {ModalForm, PageContainer, ProForm, ProFormText} from '@ant-design/pro-components';
-import { ProFormSelect } from '@ant-design/pro-form';
+import {ModalForm, PageContainer, ProForm, ProFormText, ProFormUploadButton} from '@ant-design/pro-components';
+import {ProFormItem, ProFormSelect} from '@ant-design/pro-form';
 import { Button, Descriptions, Divider, Image, message } from 'antd';
 import React, { useEffect, useState } from 'react';
+import PictureUploader from "@/components/PictureUploader";
 
 const waitTime = (time: number = 100) => {
     return new Promise((resolve) => {
@@ -184,22 +185,17 @@ const UserInfo: React.FC = () => {
                     placeholder="输入修改后的编码"
                     initialValue={myUser.userCode}
                   />
-                  <ProFormSelect
-                    name="userAvatar"
-                    fieldProps={{
-                      size: 'large',
-                    }}
-                    label="修改头像"
-                    options={selectAvatarUrl}
-                    placeholder={'请选择用户头像 '}
-                    initialValue={myUser.userAvatar}
-                    rules={[
-                      {
-                        required: true,
-                        message: '请输入选择用户头像!',
-                      },
-                    ]}
-                  />
+
+                  <ProFormItem label="用户头像" name="picture">
+                    <PictureUploader biz="user_avatar" />
+                    <ProFormText
+                      width="md"
+                      name="userAvatar"
+                      label="修改我的头像"
+                      placeholder="输入修改后的头像"
+                      initialValue={myUser.userAvatar}
+                    />
+                  </ProFormItem>
                 </ProForm.Group>
               </ModalForm>
             </PageContainer>

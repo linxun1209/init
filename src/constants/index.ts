@@ -8,6 +8,11 @@ export const BACKEND_HOST_LOCAL = "http://localhost:8101";
  */
 export const BACKEND_HOST_PROD = "https://yupi.icu";
 
+/**
+ * COS 访问地址
+ */
+export const COS_HOST = "https://linxun-1310915694.cos.ap-shanghai.myqcloud.com";
+
 
 /**
  * 默认头像
