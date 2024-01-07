@@ -17,6 +17,6 @@ export default [
       { icon: 'table', path: '/admin/user', component: './Admin/User', name: "用户管理" },
     ],
   },
-  { path: '/', redirect: '/welcome' },
+  { path: '/', icon: 'home', component: './Index', name: "主页" },
   { path: '*', layout: false, component: './404' },
 ];
